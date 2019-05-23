@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>formulaire</title>
+
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="theme.js"></script>
+  </head>
+  <body>
+    <h3>Un petit formulaire</h3>
+
+    <label>Identifiant</label>
+    <input type="text" id="identifiant" name="id" value="">
+    <label>Mot de passe</label>
+    <input type="text" id="mdp" name="id" value="">
+    <input type="button" onclick="ajax()" name="valider" value="Valider">
+
+    <div id="res"></div>
+
+    <div class="affprof" style="display : none">
+      <table>
+        <tr>
+          <td>Identifiant</td>
+          <td id="resid"></td>
+        </tr>
+        <tr>
+          <td>Mot de passe</td>
+          <td id="resmdp"></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td id="resdesc"></td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
